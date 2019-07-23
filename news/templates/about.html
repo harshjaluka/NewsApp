@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div class="jumbotron">
+
+    <h1 class="display-4">Hello, folks!!</h1>
+    <br>
+    <p class="lead">Welcome to NewsApp, a website that brings you <b>NEWS Not NOISE</b> from top sites all in one place. Be it TOI or BBC News, be it Business or Entertainment news, we have it all. But that's not it. You can also search for news articles regarding any topic now.<br><br> So sit back and enjoy browsing through NewsApp.</p>
+    <hr class="my-4">
+    <p>Developed by harshjaluka, NewsApp is a personal project built on the Django framework, my first project!! It utilises API calls from NewsAPI and displays the results in an organized and stylish manner. Well this site is very simple, but its just the hello world program in my web development. </p>   
+
+    <hr class="my-4">
+
+    <ul style="list-style-type: none;overflow: hidden;">
+    <li style="float: left;padding-right: 10px">
+      <a href="https://github.com/harshjaluka" role="button" target="_blank">
+        <img src="{% static 'images/github.png' %}" height="40px" width="40px"  ></a>
+    </li>
+    <li style="float: left;padding-right: 10px">
+      <a href="https://in.linkedin.com/in/harsh-j-3b1965a3" role="button" target="_blank">
+        <img src="{% static 'images/linkedin.png' %}" height="40px" width="40px" ></a>
+    </li>
+    <li style="float: left;padding-right: 10px">
+      <a href="https://twitter.com/harshjaluka" role="button" target="_blank">
+        <img src="{% static 'images/twitter.png' %}" height="40px" width="40px" ></a>
+    </li>
+    </ul>
+
+  </div>
+{% endblock %}
